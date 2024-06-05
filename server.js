@@ -20,8 +20,9 @@ const server = http.createServer((req, res) => {
   res.end(`Hello World , ${getServerIPAddress()}\n`);
 });
 
+const hostname = '0.0.0.0';
 const PORT = 80;
 
 server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
+  console.log(`Server running at http://${hostname}:${PORT}/`);
 });
