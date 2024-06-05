@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
 });
 
 const hostname = '0.0.0.0';
-const PORT = 80;
+const PORT = 8080;
 
 server.listen(PORT, () => {
   console.log(`Server running at http://${hostname}:${PORT}/`);
