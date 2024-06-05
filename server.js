@@ -1,5 +1,5 @@
-import http from "http";
-import os from "os";
+const http = require('http');
+const os = require('os');
 
 const getServerIPAddress = () => {
   const networkInterfaces = os.networkInterfaces();
